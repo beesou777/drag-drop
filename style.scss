@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    h1{
+    text-align: center;
+    color: salmon;
+    font-family: sans-serif;
+    font-size: 2rem;
+    }
+    .container{
+        height: 600px;
+        width: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+        .card-section{
+            height: 248px;
+            width: 248px;
+            border: 2px solid salmon;
+            .image{
+                background: url("https://images.pexels.com/photos/36469/woman-person-flowers-wreaths.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .hovered{
+            border: 4px dotted salmon;
+        }
+    }
+
+}
